@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projects.Domain", "Projects
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Application", "Project.Application\Project.Application.csproj", "{7CD3F7FF-E87E-4EB0-9DB2-DB8AEF54D9CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notes.Persistence", "Notes.Persistence\Notes.Persistence.csproj", "{29D4BDDD-4CC7-45A6-8B62-F715FFB5A75E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.Persistence", "Notes.Persistence\Project.Persistence.csproj", "{29D4BDDD-4CC7-45A6-8B62-F715FFB5A75E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.WebAPI", "Project.WebAPI\Project.WebAPI.csproj", "{20EAE1AA-7CD2-4F94-9EC8-5AC46F310979}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project.WebAPI", "Project.WebAPI\Project.WebAPI.csproj", "{20EAE1AA-7CD2-4F94-9EC8-5AC46F310979}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rsc2y1v835th2nw0Gm0X/w7ud4e72dPwa09oVxy0v7imPp/zsj1GlJED9LMPmnIQrjP4y8OyRc5+l8wkTINy5g==",
+  "dgSpecHash": "WrbyYY5q3xKQVBAu8kT4DALz6MwuVnrEAh2DubEOCdnVJn4MOY+8ASCnAApQVdKdiX/D2Z8oVF0cx6YSOJ+kCA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Project.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Александр\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

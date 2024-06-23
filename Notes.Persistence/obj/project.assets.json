@@ -2742,9 +2742,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
-      "projectName": "Notes.Persistence",
-      "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Project.Persistence.csproj",
+      "projectName": "Project.Persistence",
+      "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Project.Persistence.csproj",
       "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\obj\\",
       "projectStyle": "PackageReference",
