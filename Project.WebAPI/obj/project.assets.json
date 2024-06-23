@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TaskMeneger.Backend\\Project.WebAPI\\Project.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj",
       "projectName": "Project.WebAPI",
-      "projectPath": "E:\\TaskMeneger.Backend\\Project.WebAPI\\Project.WebAPI.csproj",
+      "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj",
       "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "E:\\TaskMeneger.Backend\\Project.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",

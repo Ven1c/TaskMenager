@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5T//dF16cnCmSfpdERLCrkTuk3jGuPOzbAeDmKwpbI+wS69zPATIkPw5J2m9Vrf8TMvAAvqUOOJMlhE1jSucDg==",
+  "dgSpecHash": "YqJaYZCmaKdjhPWFdAOEMUBH/JmHda3yM3q/91D5HijuIJyEaXVGjJyh4j/2H0Nhw69pVG1W9YyuYSeQ6wrCPA==",
   "success": true,
-  "projectFilePath": "E:\\TaskMeneger.Backend\\Project.WebAPI\\Project.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TaskMeneger.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
       "projectName": "Notes.Persistence",
-      "projectPath": "E:\\TaskMeneger.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
       "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "E:\\TaskMeneger.Backend\\Notes.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -71,8 +71,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\TaskMeneger.Backend\\Project.Application\\Project.Application.csproj": {
-              "projectPath": "E:\\TaskMeneger.Backend\\Project.Application\\Project.Application.csproj"
+            "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj": {
+              "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj"
             }
           }
         }

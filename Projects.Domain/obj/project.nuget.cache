@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1z73f+Fh+gP1XAmWalYXbop9ML1VzW2nZQWLIgXsgWTe8HAAMjpggTWq9XfFQG72whhNb3XJ9/AE18P8mHa1g==",
+  "dgSpecHash": "c3yZ9gpSnteuEWQVVEM6qiaH0ksWrLCAqVndVplFzklT/iP8inT7RbUjiaX2V1KIX1q+KRe0YK0Og0yB+7yp4A==",
   "success": true,
-  "projectFilePath": "E:\\TaskMeneger.Backend\\Projects.Domain\\Projects.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

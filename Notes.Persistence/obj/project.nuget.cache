@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4E3II9/Rkg7sNwfuHQcyLzVpv120SxcHE5nmL1orE8afUVN4P6anHHa3BumX71CJTP+oA/3K2TQRsbFzXy+PRw==",
+  "dgSpecHash": "xguYSCNhsdLkRqTvp3ZeqpL1LEUP3wzOt8urMD14oaKi+NcTnGGkT4208PNqvchcnwggL37cGQM3EoCYawj/dQ==",
   "success": true,
-  "projectFilePath": "E:\\TaskMeneger.Backend\\Notes.Persistence\\Notes.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Notes.Persistence\\Notes.Persistence.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

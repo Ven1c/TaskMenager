@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\TaskMeneger.Backend\\Projects.Domain\\Projects.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj",
       "projectName": "Projects.Domain",
-      "projectPath": "E:\\TaskMeneger.Backend\\Projects.Domain\\Projects.Domain.csproj",
+      "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj",
       "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-      "outputPath": "E:\\TaskMeneger.Backend\\Projects.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",

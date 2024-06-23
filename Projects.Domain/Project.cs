@@ -8,6 +8,6 @@ namespace Projects.Domain
 {
     public class Project
     {
-
+        int id;
     }
 }
