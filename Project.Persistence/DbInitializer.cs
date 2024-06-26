@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Project.Persistence
 {
-    internal class DbInitializer
+    public class DbInitializer
     {
+        public static void Initialize(ProjectsDbContext context) 
+        {
+            context.Database.EnsureCreated();
+        }
     }
 }
