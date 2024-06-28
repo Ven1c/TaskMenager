@@ -4,6 +4,140 @@
     "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj",
+        "projectName": "Project.Application",
+        "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj",
+        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\Project.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\Project.Persistence.csproj",
+        "projectName": "Project.Persistence",
+        "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\Project.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj": {
+                "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -23,6 +157,77 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj": {
+                "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj"
+              },
+              "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\Project.Persistence.csproj": {
+                "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Persistence\\Project.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj",
+        "projectName": "Projects.Domain",
+        "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj",
+        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,9 +263,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
