@@ -1009,7 +1009,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.20",
-          "Project.Application": "1.0.0"
+          "Project.Application": "1.0.0",
+          "Projects.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Project.Persistence.dll": {}

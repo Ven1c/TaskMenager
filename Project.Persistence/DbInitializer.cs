@@ -12,5 +12,6 @@ namespace Project.Persistence
         {
             context.Database.EnsureCreated();
         }
+
     }
 }

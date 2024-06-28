@@ -95,6 +95,9 @@
             "projectReferences": {
               "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj": {
                 "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj"
+              },
+              "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Projects.Domain\\Projects.Domain.csproj"
               }
             }
           }
