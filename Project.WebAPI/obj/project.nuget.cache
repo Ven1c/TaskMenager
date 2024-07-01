@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8V8HR5CjJeRMSTvo4CjVRBvIU9L2JhS4LeF/TVE7xrW12YjnOElrj6LZMgVVsKdjXwo4M7rq+c2NwydsazHNbQ==",
+  "dgSpecHash": "zfDBSR7JSmZ+e7CRShLhp9dZhzf3kItQ2V9hOGsKrCGgm9uLq6olBTmIuMLIuGUv2smW/68Op7WgiXROYTRLBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.WebAPI\\Project.WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Александр\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LWKg+7tm/PFyQ87swumpO1Ul5snJ6eaCX2lNCQ4j/iAlkliZ0AVBXm1Id7qNVGAb202zemcLeY7Y60bg/04E8w==",
+  "dgSpecHash": "YJ/4IBh11N9DBPvQ9uWpJdUUYPEVmMDVHvGyK/fAoBKMrtLgITOGmFbDM3SkKFExE17QAYgze6YHexiz+vlBUA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Александр\\Source\\Repos\\NewRepo\\Project.Application\\Project.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Александр\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.20\\microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.20\\microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
     "C:\\Users\\Александр\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.20\\microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
