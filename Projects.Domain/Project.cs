@@ -8,9 +8,12 @@ namespace Projects.Domain
 {
     public class Project_
     {
-        public Guid UserId { get; set; }
+        public Guid AuthorId { get; set; }
         public Guid Id { get; set; }  
         public string Name { get; set; }
-        //TO DO, добавить все из тз по сущности проекта
+        public string Details { get; set; }
+        public enum StatusCombination {New, Closed}
+        //TO DO, разобраться с переопределением enum в дальнейшем
+        //  public enum StatusCombination { New,InWork, InAcceptance, InTest, Closed}
     }
 }
