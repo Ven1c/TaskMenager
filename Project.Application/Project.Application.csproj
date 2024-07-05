@@ -8,11 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Projects.Domain\Projects.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tasks\" />
+    <Folder Include="Users\" />
   </ItemGroup>
 
 </Project>
