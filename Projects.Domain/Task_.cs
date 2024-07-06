@@ -9,6 +9,7 @@ namespace Projects.Domain
     public class Task_
     {
         public Guid Id { get; set; }
+        public Guid ProjectId { get; set; }
         public string TaskNm { get; set; }
         public string Details { get; set; }
         public string Status { get; set; }

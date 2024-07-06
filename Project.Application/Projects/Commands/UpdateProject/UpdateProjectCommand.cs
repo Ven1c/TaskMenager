@@ -1,14 +1,13 @@
 ﻿using System;
 using MediatR;
 
-namespace Project.Application.Projects.Commands.CreateProject
+namespace Project.Application.Projects.Commands.UpdateProject
 {
-    public class CreateProjectCommand : IRequest<Guid>
+    public class UpdateProjectCommand:IRequest<Unit>
     {
         public Guid Id { get; set; }
         public Guid AuthorId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
-        public enum StatusCombination { New, Closed }
     }
 }
