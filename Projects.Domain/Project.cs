@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace Projects.Domain
     {
         public Guid AuthorId { get; set; }
         public Guid Id { get; set; }  
+        public Guid[] TasksId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
         public enum StatusCombination {New, Closed}

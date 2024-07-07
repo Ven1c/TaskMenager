@@ -23,11 +23,14 @@ namespace Project.Application.Projects.Commands.CreateProject
                 Name = request.Name,
                 Details = request.Details,
                 AuthorId = request.AuthorId,
-                Id = Guid.NewGuid()
+                Id = Guid.NewGuid(),
+                TasksId = request.TasksId
                 //status combination
             };
+            
             await _projectDbContext.Projects_.AddAsync(project,cancellationToken);
             await _projectDbContext.SaveChangesAsync(cancellationToken);
+            
             return project.Id;
         }
     }
