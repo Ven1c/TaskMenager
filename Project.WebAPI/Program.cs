@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 
 using Project.Persistence;
+using Project.WebAPI;
 
 namespace Project.WebApi
 {

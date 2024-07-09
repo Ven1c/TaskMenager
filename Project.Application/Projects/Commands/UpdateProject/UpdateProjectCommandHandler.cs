@@ -27,7 +27,7 @@ namespace Project.Application.Projects.Commands.UpdateProject
             entity.AuthorId = request.AuthorId;
             entity.Name = request.Name; 
             entity.Details = request.Details;
-            entity.TasksId = request.TasksId;
+
             await _projectDbContext.SaveChangesAsync(cancellationToken);
             return Unit.Value;
         }

@@ -7,11 +7,11 @@ using MediatR;
 
 namespace Project.Application.Projects.Queries.GetProjectDetails
 {
-    public class GetProgectDetailsQuery : IRequest<ProjectDetailsVm>
+    public class GetProjectDetailsQuery : IRequest<ProjectDetailsVm>
     {
         public Guid Id { get; set; }
         public Guid AuthorId { get; set; }
-        public Guid[] TasksId { get; set; }
+        public List<Guid> TasksId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
         public enum StatusCombination { New, Closed }

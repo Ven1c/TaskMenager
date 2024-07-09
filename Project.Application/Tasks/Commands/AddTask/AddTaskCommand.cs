@@ -1,12 +1,13 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projects.Domain
+namespace Project.Application.Tasks.Commands.AddTask
 {
-    public class Task_
+    public class AddTaskCommand:IRequest<Guid>
     {
         public Guid Id { get; set; }
         public Guid ProjectId { get; set; }
@@ -14,6 +15,5 @@ namespace Projects.Domain
         public string TaskName { get; set; }
         public string Details { get; set; }
         public string Status { get; set; }
-        //TO DO, можно ли автоматизировать переключение задачи по статусам, подумать над этим
     }
 }

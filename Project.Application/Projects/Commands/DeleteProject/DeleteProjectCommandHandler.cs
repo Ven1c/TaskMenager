@@ -23,6 +23,8 @@ namespace Project.Application.Projects.Commands.DeleteProject
         {
             var entity = await _projectDbContext.Projects_
                 .FindAsync(new object[] { request.Id }, cancellationToken);
+            _projectDbContext.Projects_.Remove(entity);
+            await _projectDbContext.SaveChangesAsync(cancellationToken);
             return Unit.Value;
         }
         }

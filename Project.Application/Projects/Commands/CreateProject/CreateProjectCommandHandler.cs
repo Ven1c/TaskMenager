@@ -24,7 +24,7 @@ namespace Project.Application.Projects.Commands.CreateProject
                 Details = request.Details,
                 AuthorId = request.AuthorId,
                 Id = Guid.NewGuid(),
-                TasksId = request.TasksId
+                TasksId = new List<Guid> {}
                 //status combination
             };
             

@@ -18,8 +18,12 @@ namespace Project.Persistence
             : base(options) { }
         protected override void OnModelCreating(ModelBuilder Builder)
         {
+            Builder.Entity<Project_>()
+                .HasNoKey();
             Builder.ApplyConfiguration(new ProjectConfiguration());
+                
             base.OnModelCreating(Builder);
+                
         }
     
     }
