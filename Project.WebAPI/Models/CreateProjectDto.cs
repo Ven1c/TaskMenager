@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Project.Application.Common.Mappings;
-using Project.Application.Projects.Commands.CreateProject;
+using Project.Application.Tasks.Commands.CreateProject;
 
 
 namespace Project.WebApi.Models

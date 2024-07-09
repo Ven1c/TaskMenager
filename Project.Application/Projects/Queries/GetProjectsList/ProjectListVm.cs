@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Project.Application.Projects.Queries.GetProjectsList
+namespace Project.Application.Tasks.Queries.GetProjectsList
 {
     public class ProjectListVm
     {

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.Application.Projects.Queries.GetProjectDetails
+namespace Project.Application.Tasks.Queries.GetProjectDetails
 {
     public class GetProjectDetailsQueryHandler
         : IRequestHandler<GetProjectDetailsQuery, ProjectDetailsVm>

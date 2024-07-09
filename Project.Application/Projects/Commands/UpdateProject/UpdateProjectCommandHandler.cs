@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Project.Application.Interfaces;
-using Project.Application.Projects.Commands.CreateProject;
+using Project.Application.Tasks.Commands.CreateProject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Projects.Domain;
 using System.Reflection.Metadata;
 
-namespace Project.Application.Projects.Commands.UpdateProject
+namespace Project.Application.Tasks.Commands.UpdateProject
 {
     public class UpdateProjectCommandHandler : IRequestHandler<UpdateProjectCommand,Unit>
     {

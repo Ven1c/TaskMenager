@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Projects.Domain;
 using AutoMapper;
 
-namespace Project.Application.Projects.Queries.GetProjectsList
+namespace Project.Application.Tasks.Queries.GetProjectsList
 {
     public class ProjectLookUpDto : IMapWith<Project_>
     {

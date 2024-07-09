@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace Project.Application.Projects.Commands.UpdateProject
+namespace Project.Application.Tasks.Commands.UpdateProject
 {
     public class UpdateProjectCommand:IRequest<Unit>
     {

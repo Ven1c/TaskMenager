@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Project.Application.Projects.Queries.GetProjectDetails
+namespace Project.Application.Tasks.Queries.GetProjectDetails
 {
     public class GetProjectDetailsQuery : IRequest<ProjectDetailsVm>
     {

@@ -8,7 +8,7 @@ using MediatR;
 using Project.Application.Interfaces;
 using Projects.Domain;
 
-namespace Project.Application.Projects.Commands.CreateProject
+namespace Project.Application.Tasks.Commands.CreateProject
 {
     public class CreateProjectCommandHandler
         :IRequestHandler<CreateProjectCommand, Guid>

@@ -2,8 +2,8 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Project.Application.Interfaces;
-using Project.Application.Projects.Queries.GetProjectDetails;
-using Project.Application.Projects.Queries.GetProjectsList;
+using Project.Application.Tasks.Queries.GetProjectDetails;
+using Project.Application.Tasks.Queries.GetProjectsList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper.QueryableExtensions;
 
-namespace Project.Application.Projects.Queries.GetProjectsList
+namespace Project.Application.Tasks.Queries.GetProjectsList
 {
     public class GetProjectListQueryHandler : IRequestHandler<GetProjectListQuery,ProjectListVm>
     {

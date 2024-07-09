@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Project.Application.Interfaces;
-using Project.Application.Projects.Commands.DeleteProject;
+using Project.Application.Tasks.Commands.DeleteProject;
 using System;
 using System.Collections.Generic;
 using System.Linq;

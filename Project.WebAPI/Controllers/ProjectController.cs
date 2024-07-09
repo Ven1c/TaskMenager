@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-using Project.Application.Projects.Queries.GetProjectsList;
-using Project.Application.Projects.Queries.GetProjectDetails;
+using Project.Application.Tasks.Queries.GetProjectsList;
+using Project.Application.Tasks.Queries.GetProjectDetails;
 using Project.WebApi.Models;
-using Project.Application.Projects.Commands.CreateProject;
-using Project.Application.Projects.Commands.UpdateProject;
-using Project.Application.Projects.Commands.DeleteProject;
+using Project.Application.Tasks.Commands.CreateProject;
+using Project.Application.Tasks.Commands.UpdateProject;
+using Project.Application.Tasks.Commands.DeleteProject;
 
 namespace Project.WebAPI.Controllers
 {

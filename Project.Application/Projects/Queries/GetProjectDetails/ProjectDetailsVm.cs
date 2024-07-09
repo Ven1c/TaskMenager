@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Projects.Domain;
 using AutoMapper;
 
-namespace Project.Application.Projects.Queries.GetProjectDetails
+namespace Project.Application.Tasks.Queries.GetProjectDetails
 {
     public class ProjectDetailsVm : IMapWith<Project_>
     {
@@ -24,9 +24,9 @@ namespace Project.Application.Projects.Queries.GetProjectDetails
                 .ForMember(projectVm => projectVm.Details,
                     opt => opt.MapFrom(project => project.Details))
                 .ForMember(projectVm => projectVm.Id,
-                    opt => opt.MapFrom(project => project.Id))
-                .ForMember(projectVm => projectVm.TasksId,
-                   opt => opt.MapFrom(project => project.TasksId));
+                    opt => opt.MapFrom(project => project.Id));
+                //.ForMember(projectVm => projectVm.TasksId,
+                //opt => opt.MapFrom(project => project.TasksId));
         }
     }
 }

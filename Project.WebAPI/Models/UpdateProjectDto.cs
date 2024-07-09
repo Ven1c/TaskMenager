@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using System;
 using Project.Application.Common.Mappings;
-using Project.Application.Projects.Commands.UpdateProject;
+using Project.Application.Tasks.Commands.UpdateProject;
 
 
 namespace Project.WebApi.Models

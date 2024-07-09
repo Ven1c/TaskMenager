@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Project.Application.Interfaces;
-using Project.Application.Projects.Commands.CreateProject;
+using Project.Application.Tasks.Commands.CreateProject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ using Projects.Domain;
 using System.Reflection.Metadata;
 
 
-namespace Project.Application.Projects.Commands.DeleteProject
+namespace Project.Application.Tasks.Commands.DeleteProject
 {
     public class DeleteProjectCommandHandler : IRequestHandler<DeleteProjectCommand, Unit>
     {

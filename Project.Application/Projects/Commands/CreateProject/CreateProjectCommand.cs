@@ -1,7 +1,7 @@
 ﻿using System;
 using MediatR;
 
-namespace Project.Application.Projects.Commands.CreateProject
+namespace Project.Application.Tasks.Commands.CreateProject
 {
     public class CreateProjectCommand : IRequest<Guid>
     {
