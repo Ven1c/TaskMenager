@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using System.Reflection;
+using System;
+using System.IO;
 using Project.Application;
 using Project.Application.Common.Mappings;
 using Project.Application.Interfaces;
@@ -39,6 +41,12 @@ namespace Project.WebAPI
                     policy.AllowAnyOrigin();
                 });
             });
+            services.AddSwaggerGen(config =>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                config.IncludeXmlComments(xmlPath);
+            });
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -46,8 +54,13 @@ namespace Project.WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-           
-            
+
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.RoutePrefix = string.Empty;
+                config.SwaggerEndpoint("swagger/v1/swagger.json", "Project API");
+            });
             app.UseRouting();
             app.UseHttpsRedirection();
             app.UseCors("AllowAll");

@@ -20,7 +20,7 @@ namespace Project.Application.Tasks.Commands.DeleteTask
                 .FindAsync(new object[] { request.Id }, cancellationToken);
             var entity2 = await _projectDbContext.Projects_
                 .FindAsync(new object[] { entity1.ProjectId }, cancellationToken);
-            entity2.TasksId.Remove(entity1.Id);
+            entity2.TasksId.Remove(entity1);
             _projectDbContext.Tasks_.Remove(entity1);
             await _projectDbContext.SaveChangesAsync(cancellationToken);
             return Unit.Value;

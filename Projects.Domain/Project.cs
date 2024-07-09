@@ -9,13 +9,17 @@ using System.Threading.Tasks;
 
 namespace Projects.Domain
 {
-    [Keyless]
+
     public class Project_
     {
+        public Project_()
+        {
+            TasksId = new List<Task_>();
+        }
         public Guid AuthorId { get; set; }
         public Guid Id { get; set; }
-        [NotMapped]
-        public List<Guid> TasksId { get; set; }
+        
+        public List<Task_> TasksId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
         public enum StatusCombination {New, Closed}

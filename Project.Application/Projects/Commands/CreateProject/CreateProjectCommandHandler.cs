@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using Project.Application.Interfaces;
 using Projects.Domain;
@@ -13,6 +14,7 @@ namespace Project.Application.Tasks.Commands.CreateProject
     public class CreateProjectCommandHandler
         :IRequestHandler<CreateProjectCommand, Guid>
     {
+        private readonly IMapper _mapper;
         private readonly IProjectDbContext _projectDbContext;
         public CreateProjectCommandHandler(IProjectDbContext dbContext) =>
             _projectDbContext = dbContext;
@@ -24,7 +26,7 @@ namespace Project.Application.Tasks.Commands.CreateProject
                 Details = request.Details,
                 AuthorId = request.AuthorId,
                 Id = Guid.NewGuid(),
-                TasksId = new List<Guid> {}
+                TasksId = new List<Task_> { }
                 //status combination
             };
             

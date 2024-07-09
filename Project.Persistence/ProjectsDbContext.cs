@@ -19,7 +19,8 @@ namespace Project.Persistence
         protected override void OnModelCreating(ModelBuilder Builder)
         {
             Builder.Entity<Project_>()
-                .HasNoKey();
+                .HasMany(tasks => tasks.TasksId);
+            
             Builder.ApplyConfiguration(new ProjectConfiguration());
                 
             base.OnModelCreating(Builder);

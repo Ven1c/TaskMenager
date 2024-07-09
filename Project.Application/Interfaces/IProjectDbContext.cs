@@ -13,5 +13,6 @@ namespace Project.Application.Interfaces
         DbSet<User_> Users_ { get; set; }
         DbSet<Project_> Projects_ { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
+
     }
 }

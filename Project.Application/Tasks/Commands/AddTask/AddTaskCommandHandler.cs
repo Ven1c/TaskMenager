@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Projects.Domain;
+using System.Xml.Linq;
 
 namespace Project.Application.Tasks.Commands.AddTask
 {
@@ -28,9 +29,12 @@ namespace Project.Application.Tasks.Commands.AddTask
             };
             var entity = await _projectDbContext.Projects_
                 .FindAsync(new object[] { request.ProjectId }, cancellationToken);
-            entity.TasksId.Add(task.Id);
+
+            entity.TasksId.Add(task);
+
             await _projectDbContext.Tasks_.AddAsync(task, cancellationToken);
             await _projectDbContext.SaveChangesAsync(cancellationToken);
+
             return task.Id;
 
         }

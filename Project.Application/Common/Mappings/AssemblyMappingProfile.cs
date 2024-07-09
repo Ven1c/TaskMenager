@@ -12,6 +12,7 @@ namespace Project.Application.Common.Mappings
         public AssemblyMappingProfile(Assembly assembly) =>
             ApplyMappingsFromAssembly(assembly);
 
+       
         private void ApplyMappingsFromAssembly(Assembly assembly)
 {
             var types = assembly.GetExportedTypes()

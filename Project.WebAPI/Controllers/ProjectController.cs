@@ -21,7 +21,16 @@ namespace Project.WebAPI.Controllers
         private readonly IMapper _mapper;
         public ProjectController(IMapper mapper) => _mapper = mapper;
 
-
+        /// <summary>
+        /// Gets all projects from db to show, bad english
+        /// </summary>
+        ///  <remarks>
+        /// Sample request:
+        /// GET /note
+        /// </remarks>
+        ///  <returns>Returns ProjectListVm</returns>
+        /// <response code="200">Success</response>
+        /// <returns></returns>
         [HttpGet]
         public async  Task<ActionResult<ProjectListVm>> GetAll()
         {
@@ -33,6 +42,11 @@ namespace Project.WebAPI.Controllers
             return Ok(vm);
         }
 
+        /// <summary>
+        /// Get project by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<ProjectDetailsVm>> Get(Guid id)
         {
@@ -45,25 +59,39 @@ namespace Project.WebAPI.Controllers
             return Ok(vm);
         }
         
-
+        /// <summary>
+        /// Create project from body  
+        /// </summary>
+        /// <param name="createProjectDto"></param>
+        /// <returns></returns>
         [HttpPost]
-        public async Task<ActionResult<Guid>> Create([FromBody]CreateProjectDto createNoteDto)
+        public async Task<ActionResult<Guid>> Create([FromBody]CreateProjectDto createProjectDto)
         {
-            var command = _mapper.Map<CreateProjectCommand>(createNoteDto);
+            var command = _mapper.Map<CreateProjectCommand>(createProjectDto);
             command.AuthorId = UserId;
-            var noteId = await Mediator.Send(command);
-            return Ok(noteId);
+            var projectId = await Mediator.Send(command);
+            return Ok(projectId);
         }
 
+        /// <summary>
+        /// Update project from body 
+        /// </summary>
+        /// <param name="updateProjectDto"></param>
+        /// <returns></returns>
         [HttpPut]
-        public async Task<IActionResult> Update([FromBody]UpdateProjectDto updateNoteDto)
+        public async Task<IActionResult> Update([FromBody]UpdateProjectDto updateProjectDto)
         {
-            var command = _mapper.Map<UpdateProjectCommand>(updateNoteDto);
+            var command = _mapper.Map<UpdateProjectCommand>(updateProjectDto);
             command.AuthorId = UserId;
             await Mediator.Send(command);
             return NoContent();
         }
 
+        /// <summary>
+        /// Delete Project
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete([FromRoute]Guid id)
         {

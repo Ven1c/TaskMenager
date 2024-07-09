@@ -18,6 +18,7 @@ namespace Project.Application.Tasks.Queries.GetProjectDetails
 
         public void Mapping(Profile profile)
         {
+            profile.AllowNullCollections = true;
             profile.CreateMap<Project_, ProjectDetailsVm>()
                 .ForMember(projectVm => projectVm.Name,
                     opt => opt.MapFrom(project => project.Name))
