@@ -9,14 +9,13 @@ namespace Project.WebAPI.Models
     public class ChangeStatusDto:IMapWith<ChangeTaskStatusCommand>
     {
         public Guid Id { get; set; }
-        public string Status { get; set; }
+
         public void Mapping(Profile profile)
         {
             profile.CreateMap<ChangeStatusDto, ChangeTaskStatusCommand>()
                 .ForMember(taskCommand => taskCommand.Id,
-                    opt => opt.MapFrom(taskCommand => taskCommand.Id))
-                .ForMember(taskCommand => taskCommand.Status,
-                    opt => opt.MapFrom(taskCommand => taskCommand.Status));
+                    opt => opt.MapFrom(taskCommand => taskCommand.Id));
+
         }
     }
 }

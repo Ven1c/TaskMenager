@@ -15,7 +15,7 @@ namespace Project.Application.Tasks.Queries.GetProjectDetails
        // public Guid[] TasksId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
-
+        public string[] statusCombination { get; set; }
         public void Mapping(Profile profile)
         {
             profile.AllowNullCollections = true;
@@ -25,9 +25,9 @@ namespace Project.Application.Tasks.Queries.GetProjectDetails
                 .ForMember(projectVm => projectVm.Details,
                     opt => opt.MapFrom(project => project.Details))
                 .ForMember(projectVm => projectVm.Id,
-                    opt => opt.MapFrom(project => project.Id));
-                //.ForMember(projectVm => projectVm.TasksId,
-                //opt => opt.MapFrom(project => project.TasksId));
+                    opt => opt.MapFrom(project => project.Id))
+                .ForMember(projectVm => projectVm.statusCombination,
+                    opt => opt.MapFrom(project => project.StatusCombination));
         }
     }
 }

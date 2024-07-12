@@ -67,8 +67,10 @@ namespace Project.WebAPI.Controllers
         public async Task<IActionResult> ChangeStatus([FromRoute] Guid id)
         {
             var changeStatusDto = new ChangeStatusDto
-        {
-            var command = _mapper.Map<ChangeStatusDto>(changeStatusDto);
+            {
+                Id = id
+            };
+            var command = _mapper.Map<ChangeTaskStatusCommand>(changeStatusDto);
             await Mediator.Send(command);
             return NoContent();
         }
@@ -79,7 +81,7 @@ namespace Project.WebAPI.Controllers
         /// <param name="ProjectId"></param>
         /// <returns></returns>
         [HttpPatch("{ProjectId}")]
-        public async Task<ActionResult<TaskDetailsVm>> GetByProject(Guid ProjectId)
+        public async Task<ActionResult> GetByProject(Guid ProjectId)
         {
             var query = new GetTaskListQuery
             {

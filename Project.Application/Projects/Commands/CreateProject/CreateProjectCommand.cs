@@ -1,6 +1,8 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 using AutoMapper;
 using MediatR;
+using Projects.Domain;
 
 namespace Project.Application.Tasks.Commands.CreateProject
 {
@@ -12,8 +14,9 @@ namespace Project.Application.Tasks.Commands.CreateProject
         public List<Guid> TasksId { get; set; }
         public string Name { get; set; }
         public string Details { get; set; }
-        public enum StatusCombination { New, Closed }
         
+        public string[] StatusCombination {get; set; }
+
     }
     
 }

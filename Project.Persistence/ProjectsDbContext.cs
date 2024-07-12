@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Projects.Domain;
 using Project.Application.Interfaces;
 using Project.Persistence.EntityTypeConfiguration;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+
 namespace Project.Persistence
 {
     public class ProjectsDbContext : DbContext, IProjectDbContext
@@ -14,13 +16,22 @@ namespace Project.Persistence
         public DbSet<Project_> Projects_ { get; set; }
         public DbSet<Task_> Tasks_ { get; set; }
         public DbSet<User_> Users_ { get; set; }
+
         public ProjectsDbContext(DbContextOptions<ProjectsDbContext> options)
             : base(options) { }
         protected override void OnModelCreating(ModelBuilder Builder)
         {
+            var converter = new ValueConverter<string[], string>(
+                    x => string.Join(",", x),
+                     x => x.Split(',', StringSplitOptions.RemoveEmptyEntries));
+            Builder.Entity<Project_>()
+                .Property(e => e.StatusCombination)
+                .HasConversion(converter);
+                
             Builder.Entity<Project_>()
                 .HasMany(tasks => tasks.TasksId);
-            
+
+
             Builder.ApplyConfiguration(new ProjectConfiguration());
                 
             base.OnModelCreating(Builder);
