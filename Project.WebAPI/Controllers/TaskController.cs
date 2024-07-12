@@ -63,8 +63,10 @@ namespace Project.WebAPI.Controllers
         /// </summary>
         /// <param name="changeStatusDto"></param>
         /// <returns></returns>
-        [HttpPut]
-        public async Task<IActionResult> ChangeStatus([FromBody] ChangeStatusDto changeStatusDto)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> ChangeStatus([FromRoute] Guid id)
+        {
+            var changeStatusDto = new ChangeStatusDto
         {
             var command = _mapper.Map<ChangeStatusDto>(changeStatusDto);
             await Mediator.Send(command);
