@@ -13,6 +13,7 @@ namespace Projects.Domain
         public Guid Id { get; set; }
         public Guid ProjectId { get; set; }
         public Guid UserId { get; set; }
+        public User_ Worker { get; set; }
         public string TaskName { get; set; }
         public string Details { get; set; }
         public string Status { get; set; }

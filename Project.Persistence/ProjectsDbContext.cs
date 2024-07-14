@@ -21,6 +21,14 @@ namespace Project.Persistence
             : base(options) { }
         protected override void OnModelCreating(ModelBuilder Builder)
         {
+            Builder.Entity<User_>().HasData(new User_
+            {
+                Id = Guid.NewGuid(),
+                Login = "admin",
+                Password = "admin",
+                UserName = "Administrator",
+                UserRole = "admin"
+            });
             var converter = new ValueConverter<string[], string>(
                     x => string.Join(",", x),
                      x => x.Split(',', StringSplitOptions.RemoveEmptyEntries));
@@ -31,7 +39,8 @@ namespace Project.Persistence
             Builder.Entity<Project_>()
                 .HasMany(tasks => tasks.TasksId);
 
-
+            Builder.Entity<Task_>()
+               .HasOne(user => user.Worker);
             Builder.ApplyConfiguration(new ProjectConfiguration());
                 
             base.OnModelCreating(Builder);

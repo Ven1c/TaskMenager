@@ -50,6 +50,7 @@ namespace Project.WebAPI.Controllers
         /// <param name="addTaskDto"></param>
         /// <returns></returns>
         [HttpPost]
+        [Authorize(Roles = "moderator")]
         public async Task<ActionResult<Guid>> Create([FromBody] AddTaskDto addTaskDto)
         {
             var command = _mapper.Map<AddTaskCommand>(addTaskDto);
@@ -64,6 +65,8 @@ namespace Project.WebAPI.Controllers
         /// <param name="changeStatusDto"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
+        [Authorize(Roles = "moderator")]
+        [Authorize(Roles = "worker")]
         public async Task<IActionResult> ChangeStatus([FromRoute] Guid id)
         {
             var changeStatusDto = new ChangeStatusDto
@@ -98,6 +101,7 @@ namespace Project.WebAPI.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
+        [Authorize(Roles = "moderator")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var command = new DeleteTaskCommand

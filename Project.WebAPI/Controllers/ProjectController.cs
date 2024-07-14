@@ -15,7 +15,7 @@ using Project.Application.Tasks.Commands.DeleteProject;
 namespace Project.WebAPI.Controllers
 {
     [Route("api/[controller]")]
-    public class ProjectController:BaseController
+    public class ProjectController : BaseController
     {
 
         private readonly IMapper _mapper;
@@ -31,8 +31,9 @@ namespace Project.WebAPI.Controllers
         ///  <returns>Returns ProjectListVm</returns>
         /// <response code="200">Success</response>
         /// <returns></returns>
+
         [HttpGet]
-        public async  Task<ActionResult<ProjectListVm>> GetAll()
+        public async Task<ActionResult<ProjectListVm>> GetAll()
         {
             var query = new GetProjectListQuery
             {
@@ -58,14 +59,15 @@ namespace Project.WebAPI.Controllers
             var vm = await Mediator.Send(query);
             return Ok(vm);
         }
-        
+
         /// <summary>
         /// Create project from body  
         /// </summary>
         /// <param name="createProjectDto"></param>
         /// <returns></returns>
+        [Authorize(Roles = "admin")]
         [HttpPost]
-        public async Task<ActionResult<Guid>> Create([FromBody]CreateProjectDto createProjectDto)
+        public async Task<ActionResult<Guid>> Create([FromBody] CreateProjectDto createProjectDto)
         {
             var command = _mapper.Map<CreateProjectCommand>(createProjectDto);
             command.AuthorId = UserId;
@@ -78,6 +80,8 @@ namespace Project.WebAPI.Controllers
         /// </summary>
         /// <param name="updateProjectDto"></param>
         /// <returns></returns>
+        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "moderator")]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody]UpdateProjectDto updateProjectDto)
         {
