@@ -27,6 +27,7 @@ namespace Project.Application.Users.Commands.Registration
 
             };
             await _projectDbContext.Users_.AddAsync(user, cancellationToken);
+            await _projectDbContext.SaveChangesAsync(cancellationToken);
             return user.Id;
         }
     }
