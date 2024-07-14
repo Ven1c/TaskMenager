@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Project.Application.Tasks.Queries.GetProjectsList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
